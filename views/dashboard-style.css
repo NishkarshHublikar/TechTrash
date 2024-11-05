@@ -1,0 +1,208 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #45a049;
+    border-radius: 4px;
+}
+
+/* Dashboard Layout */
+.container {
+    display: flex;
+    height: calc(100vh - 64px); /* Adjust height to avoid overlapping with header */
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.main-content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* E-Waste Section */
+.e-waste-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.e-waste-item {
+    background-color: #f8f8f8;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.e-waste-item:hover {
+    transform: scale(1.05);
+}
+
+.e-waste-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.e-waste-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Request Pickup Button */
+/* Request Door Pickup Section Styling */
+#door-pickup {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 40px;
+    margin: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #door-pickup h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #door-pickup p {
+    font-size: 1.1em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #pickup-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #pickup-form label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #pickup-form input[type="text"],
+  #pickup-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  #pickup-form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  #pickup-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #pickup-form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+
+/* IMEI Certificate Section */
+.certificate-section {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: #f1f1f1;
+    border-left: 4px solid #4CAF50;
+    font-size: 1rem;
+    color: #333;
+}
+
+.certificate-section h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.certificate-section p {
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .main-content {
+        padding: 1rem;
+    }
+}
+#homecontent{
+    text-align: center;
+}
+
+h2{
+    text-align:center;
+}
