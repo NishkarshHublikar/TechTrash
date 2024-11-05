@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechTrash - Home</title>
+  <link rel="stylesheet" href="index-style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="TechTrash_logo.jpg" alt="TechTrash Logo" class="logo">
+      <h1>Welcome to TechTrash</h1>
+      <img src="TechTrash_logo.jpg" alt="TechTrash Logo" class="logo">
+    </div>
+    <p>Your trusted e-waste recycling partner!</p>
+    <div class="auth-links">
+      <a href="login.html">Login</a> | <a href="signup.html">Signup</a>
+    </div>
+  </header>
+  
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="#" onclick="navigateTo('home.html')">Home</a></li>
+      <li><a href="#" onclick="navigateTo('about.html')">About</a></li>
+      <li><a href="#" onclick="navigateTo('contact.html')">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="intro-section">
+    <h2>Introducing TechTrash</h2>
+    <p>A convenient and ethical solution for recycling your old electronic devices. We’ll personally pick up your devices from your doorstep, or at collection points in supermarkets, petrol stations, and malls.</p>
+    <p>Our expert team ensures each device is carefully dismantled, segregating materials by OEM and recyclability. Rest assured, all data is securely handled, and you’ll receive an official Pollution Control Board of India Form-30 certificate with a unique IMEI number, guaranteeing responsible disposal.</p>
+    <p>Plus, get rewarded with cashback based on your device's market value. TechTrash – recycle smart, recycle responsibly!</p>
+    <a href="signup.html" class="cta-button">Get Started</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 TechTrash. All rights reserved.</p>
+  </footer>
+  <script>
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+  </script>  
+</body>
+</html>
